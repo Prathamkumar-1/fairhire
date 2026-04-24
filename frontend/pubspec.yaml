@@ -1,0 +1,53 @@
+name: fairhire
+description: AI-powered bias detection platform for fairer hiring — Google Solution Challenge 2026.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  firebase_storage: ^12.0.0
+  cloud_firestore: ^5.0.0
+  google_sign_in: ^6.2.1
+
+  # File handling
+  file_picker: ^8.0.0
+
+  # Networking
+  http: ^1.2.0
+
+  # Charts
+  fl_chart: ^0.68.0
+
+  # State management & routing
+  provider: ^6.1.2
+  go_router: ^14.0.0
+
+  # UI utilities
+  percent_indicator: ^4.2.3
+  intl: ^0.19.0
+  google_fonts: ^6.2.1
+
+  # PDF export
+  pdf: ^3.11.0
+  printing: ^5.13.2
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/

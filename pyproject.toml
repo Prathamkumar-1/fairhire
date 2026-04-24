@@ -1,0 +1,16 @@
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+exclude = ["backend/.venv", "**/__pycache__", "*.pyc"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B"]
+ignore = [
+    "E501",   # line-length enforced above
+    "N806",   # variable in function should be lowercase (pandas conventions)
+    "B008",   # do not perform function calls in default arg values (FastAPI Depends)
+]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["backend"]

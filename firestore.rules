@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Audits: users can only read/write their own audit documents
+    match /audits/{auditId} {
+      allow read, delete: if request.auth != null
+        && resource.data.user_id == request.auth.uid;
+
+      allow create: if request.auth != null
+        && request.resource.data.user_id == request.auth.uid;
+
+      // No update allowed — audits are immutable once created
+      allow update: if false;
+    }
+
+    // Deny everything else
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

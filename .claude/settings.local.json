@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter analyze *)",
+      "Bash(git add *)",
+      "Bash(git *)",
+      "Bash(python3 *)",
+      "Bash(.venv/bin/uvicorn main:app --reload --port 8000)",
+      "Bash(echo \"Backend PID: $!\")",
+      "Bash(curl -s http://localhost:8000/health)",
+      "Bash(chmod +x *)",
+      "Bash(.venv/bin/pip list *)",
+      "Bash(/Users/hexa_morph/Downloads/fairhire/backend/.venv/bin/pip list *)",
+      "Bash(/Users/hexa_morph/Downloads/fairhire/backend/.venv/bin/python3.14 -m pip list)",
+      "Bash(/Users/hexa_morph/Downloads/fairhire/backend/.venv/bin/python3.14 *)",
+      "Bash(curl *)",
+      "Bash(/Users/hexa_morph/Downloads/fairhire/backend/.venv/bin/uvicorn main:app --reload --port 8000)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(flutter pub *)",
+      "Bash(flutter build *)"
+    ]
+  }
+}
