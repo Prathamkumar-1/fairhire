@@ -287,10 +287,9 @@ fairhire/
 
 | Name | Role |
 |------|------|
-| *(Your name here)* | Full-Stack Engineer |
-| *(Team member 2)* | ML / Bias Analysis |
-| *(Team member 3)* | UI/UX Designer |
-| *(Team member 4)* | Cloud Infrastructure |
+| *(Sudipto Saha)* | Full-Stack Engineer |
+| *(Pratham kumar)* | ML / Bias Analysis |
+| *(Bhumika kadu)* | Cloud Infrastructure |
 
 ---
 
